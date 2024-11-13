@@ -28,3 +28,4 @@ The training process visualizes the agent's progress in two ways:
 - **Python**: Main programming language used for the project.
 - **PyTorch**: Deep learning framework to build and train the DQN model.
 - **Pygame**: Library used for game development and visualization.
+- **Matplotlib**: Library used for score and mean visualization.
