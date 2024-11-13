@@ -29,3 +29,36 @@ The training process visualizes the agent's progress in two ways:
 - **PyTorch**: Deep learning framework to build and train the DQN model.
 - **Pygame**: Library used for game development and visualization.
 - **Matplotlib**: Library used for score and mean visualization.
+
+
+## Reinforcement Learning Overview
+
+In reinforcement learning (RL), an agent learns to interact with an environment in order to maximize cumulative rewards. The agent observes the current **state** of the environment, takes an **action**, and receives a **reward** and the next **state** as feedback. The process continues until a terminal **end** state is reached.
+
+Below is a simple diagram showing the interaction loop in reinforcement learning:
+
+![Reinforcement Learning Diagram](rl.png)
+
+### Key Concepts in Reinforcement Learning
+
+- **Agent**: The learner or decision maker that interacts with the environment. Takes action.
+- **State**: The current situation or configuration of the environment that the agent observes.
+- **Action**: A decision made by the agent based on the current state, which affects the environment.
+- **Reward**: The feedback signal that the agent receives after taking an action, indicating the desirability of that action.
+- **Environment**: The agent interacts with environment. The environment updates it's status according to Agent's actions.
+
+## Bellman Equation in Deep Q-Learning
+
+The Bellman Equation is fundamental in reinforcement learning and Q-Learning algorithms. It helps the agent to update the Q-values, which are estimates of the expected future rewards. The Q-value is updated using the Bellman Equation, as shown below:
+
+![Bellman Equation](bellman_equation.png)
+
+In this equation:
+- **NewQ(s, a)**: The updated Q-value for the current state `s` and action `a`.
+- **Q(s, a)**: The existing Q-value for the current state `s` and action `a`.
+- **α (Learning Rate)**: Determines how much new information overrides old information.
+- **R(s, a)**: The immediate reward received after taking action `a` in state `s`.
+- **γ (Discount Rate)**: Determines the importance of future rewards compared to immediate rewards.
+- **max Q'(s', a')**: The maximum predicted Q-value for the next state `s'` and all possible actions `a'`.
+
+The Bellman Equation helps the agent learn optimal actions by balancing immediate rewards with expected future rewards.
