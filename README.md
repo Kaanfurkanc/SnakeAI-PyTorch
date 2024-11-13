@@ -6,6 +6,16 @@ This repository contains a reinforcement learning project that trains an AI agen
 
 In this project, we use Deep Q-Learning (DQN), a popular reinforcement learning algorithm, to teach the AI agent to play Snake. The goal of the agent is to learn optimal strategies to grow as long as possible without colliding with the game boundaries or its own body.
 
+The training process visualizes the agent's progress in two ways:
+1. **Real-time Game Window**: Shows the current state of the game as the AI learns.
+2. **Score Plot**: Displays the score and average score trend over the number of games, allowing you to track the agent’s performance improvement.
+
+### Real-time Game Window
+![Real-time Game Window](images/game.png)
+
+### Score Plot
+![Score Plot](images/plot.png)
+
 ## Features
 
 - **Game Environment**: Implemented using Pygame to simulate the classic Snake game.
