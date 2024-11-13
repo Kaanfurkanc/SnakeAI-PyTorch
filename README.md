@@ -37,7 +37,7 @@ In reinforcement learning (RL), an agent learns to interact with an environment 
 
 Below is a simple diagram showing the interaction loop in reinforcement learning:
 
-![Reinforcement Learning Diagram](rl.png)
+![Reinforcement Learning Diagram](images/rl.png)
 
 ### Key Concepts in Reinforcement Learning
 
@@ -51,7 +51,7 @@ Below is a simple diagram showing the interaction loop in reinforcement learning
 
 The Bellman Equation is fundamental in reinforcement learning and Q-Learning algorithms. It helps the agent to update the Q-values, which are estimates of the expected future rewards. The Q-value is updated using the Bellman Equation, as shown below:
 
-![Bellman Equation](bellman_equation.png)
+![Bellman Equation](images/bellman_equation.png)
 
 In this equation:
 - **NewQ(s, a)**: The updated Q-value for the current state `s` and action `a`.
